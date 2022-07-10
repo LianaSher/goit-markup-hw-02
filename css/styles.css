@@ -1,0 +1,198 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --second-font: "Raleway", sans-serif;
+  --logo-color: #000000;
+  --font-color-subtitle: #212121;
+  --font-color-text: #757575;
+  --font-color-on-dark: #ffffff;
+  --font-color-contacts-futer: rgba(255, 255, 255, 0.6);
+  --color-selected: #2196f3;
+  --background-color-main: #ffffff;
+  --background-dark: #2f303a;
+  --background-light: #f5f4fa;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+body {
+  font-family: var(--main-font);
+  letter-spacing: 0.03em;
+  background-color: var(--background-color-main);
+}
+/*---------------------- HEADER------------------------*/
+.logo {
+  font-family: var(--second-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: var(--color-selected);
+}
+.logo > span {
+  color: var(--logo-color);
+}
+.menu .menu-link.current {
+  color: var(--color-selected);
+}
+.menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--font-color-subtitle);
+}
+.contact-mail,
+.contact-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--font-color-text);
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.contact-mail:hover,
+.contact-mail:focus,
+.contact-tel:hover,
+.contact-tel:focus {
+  color: var(--color-selected);
+}
+/*--------------/HEADER-------------*/
+/*--------------HERO----------------*/
+.hero {
+  background-color: var(--background-dark);
+}
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--font-color-on-dark);
+}
+.order-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--logo-color);
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.order-button:hover,
+.order-button:focus {
+  color: var(--font-color-on-dark);
+  background-color: var(--color-selected);
+}
+/*-----------------/HERO-----------------*/
+/*-------------- FEATURES----------------*/
+.features-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--font-color-subtitle);
+}
+.features-text {
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--font-color-text);
+}
+/*-------------/FEATURES------------------*/
+/*------------- OCCUPATION ---------------*/
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: var(--font-color-subtitle);
+}
+/*---------------/OCCUPATION----------------*/
+/*--------------- TEAM----------------------*/
+/* заголовок секции имеет класс аналогичный заголовку предыдущей секции*/
+.team-section {
+  background-color: var(--background-light);
+}
+.team-members {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  color: var(--font-color-subtitle);
+}
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
+
+  color: var(--font-color-text);
+}
+/*----------------/TEAM------------------*/
+/*----------------- FUTER----------------*/
+.section-footer {
+  background-color: var(--background-dark);
+}
+.contact-list {
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+.address-item {
+  color: var(--font-color-on-dark);
+}
+.contact-item {
+  color: var(--font-color-contacts-futer);
+}
+.contact-item:hover,
+.contact-item:focus,
+.address-item:hover,
+.address-item:focus {
+  color: var(--color-selected);
+}
+/*----------------- /FUTER----------------*/
+
+/*-----------------PORTFOLIO PROJECTS------------*/
+.filter {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62ch;
+  letter-spacing: 0.03em;
+
+  color: var(--font-color-subtitle);
+
+  cursor: pointer;
+}
+.filter:hover,
+.filter:focus {
+  color: var(--font-color-on-dark);
+}
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--font-color-subtitle);
+}
+.project-description {
+  font-size: 16px;
+  line-height: 1.87;
+
+  color: var(--font-color-text);
+}
