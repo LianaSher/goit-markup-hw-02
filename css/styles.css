@@ -10,6 +10,7 @@
   --background-color-main: #ffffff;
   --background-dark: #2f303a;
   --background-light: #f5f4fa;
+  --background-button-hover: #188ce8;
 }
 .list {
   list-style: none;
@@ -19,6 +20,7 @@
 }
 body {
   font-family: var(--main-font);
+  font-size: 14px;
   letter-spacing: 0.03em;
   background-color: var(--background-color-main);
 }
@@ -31,7 +33,7 @@ body {
 
   color: var(--color-selected);
 }
-.logo > span {
+.logo-color-second {
   color: var(--logo-color);
 }
 .menu .menu-link.current {
@@ -39,7 +41,6 @@ body {
 }
 .menu-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
@@ -48,7 +49,6 @@ body {
 .contact-mail,
 .contact-tel {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
@@ -83,32 +83,34 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 
-  color: var(--logo-color);
+  color: var(--font-color-on-dark);
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: var(--color-selected);
 }
 .order-button:hover,
 .order-button:focus {
   color: var(--font-color-on-dark);
-  background-color: var(--color-selected);
+  background-color: var(--background-button-hover);
 }
 /*-----------------/HERO-----------------*/
 /*-------------- FEATURES----------------*/
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
 .features-subtitle {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--font-color-subtitle);
 }
 .features-text {
-  font-size: 14px;
   line-height: 1.71;
 
   color: var(--font-color-text);
@@ -144,11 +146,13 @@ body {
 }
 /*----------------/TEAM------------------*/
 /*----------------- FUTER----------------*/
+.logo-color-on-dark {
+  color: var(--font-color-on-dark);
+}
 .section-footer {
   background-color: var(--background-dark);
 }
 .contact-list {
-  font-size: 14px;
   line-height: 1.71;
   font-style: normal;
 }
